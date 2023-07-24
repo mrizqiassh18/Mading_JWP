@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: #444444;
+}
+
+/* Main Container */
+
+.main-container {
+    display: flex;
+}
+
+/* Left Content*/
+.left-content {
+    width: 50%;
+    background-color: #e4e4e4;
+}
+/* Right Content*/
+.right-content {
+    width: 50%;
+    background-color: #e4e4e4;
+    border-left: 1px solid #c0c0c0;
+}
+
+.right-content img {
+    max-width: 600px;
+    max-height: 90%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 880px;
+}
+
+/* Part Of Left Container*/ 
+
+.judul {
+    font-size: 21px;
+    font-weight: 550;
+    padding-bottom: 10px;
+}
+
+.caption h1 {
+    float: left;
+    margin-right: 10px;
+}
+
+/*Caption*/
+.caption-container {
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    margin: 15px auto;
+    border-radius: 10px;
+    height: 420px;
+    overflow: auto;
+}
+
+.caption {
+    padding: 10px;
+    line-height: 25px;
+}
+
+.created_at {
+    margin: 5px 0;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    font-size: 14px;
+}
+
+.deskripsi {
+    font-size: 14px;
+}
+
+/* List Of Comments*/
+.comments-container {
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    margin: 10px auto;
+    border-radius: 10px;
+    height: 420px;
+    overflow: auto;
+}
+
+.comments {
+    padding: 10px;
+    line-height: 25px;
+}
+
+.comments h2 {
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.comments-list {
+    width: 95%;
+    margin: 8px auto;
+    line-height: 30px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.comments-list .nama {
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.comments-list .comments-detail {
+    font-size: 14px;
+}
+
+input[type="button"] {
+    width: 70px;
+    height: 25px;
+    margin: 5px 0;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--NavBar-->
+    <%- include('header'); %>
+    
+    <div class="sidebar">
+        <a class="active" href="/dashboard">Dashboard</a>
+        <a href="/input">Input</a>
+        <a href="/list-mading-admin">Daftar Mading</a>
+      </div>
+        <div class="content">
+            <h1>Dashboard</h1>
+            <hr>
+            <div class="card">
+                <div class="card-data">
+                    <div class="data">
+                        <img src="/img/article.png" alt="article">
+                        <div class="total-data">
+                            <h2><%=totalMading%></h2>
+                            <p>Total Article</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="button">
+                        <a href="#" class="btn-save">Save</a>
+                        <a href="#" class="btn-print">Print</a>
+                    </div>
+                </div>
+                <div class="card-data">
+                    <div class="data">
+                        <img src="/img/comment.png" alt="comment">
+                        <div class="total-data">
+                            <h2><%=totalKomentar%></h2>
+                            <p>Total Komentar</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="button">
+                        <a href="#" class="btn-save">Save</a>
+                        <a href="#" class="btn-print">Print</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Footer-->
+        <%- include('footer'); %>
+</body>
+</html>

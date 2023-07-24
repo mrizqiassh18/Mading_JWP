@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="/css/details.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--NavBar-->
+    <%- include('header'); %>
+
+    <div class="main-container">
+
+        <!--Content Sebelah Kiri-->
+        <div class="left-content">
+
+            <!--Caption-->
+            <div class="caption-container">
+                <div class="caption">
+                    <h1 class="judul"><%=item.judul%></h1>
+                    <p class="created_at">Created at :<%=item.created_at%></p>
+                    <p class="deskripsi"><%=item.caption%></p>
+                </div>
+            </div>
+
+            <!--Tampilkan Commentar yang sudah dibuat-->
+            <div class="comments-container">
+                <div class="comments">
+                        <h2 class="judul">Semua Komentar</h2>
+                        <% komentar.forEach(komen => { %>
+                            <div class="comments-list">
+                                <p class="nama"><%=komen.nama%></p>
+                                <p class="comments-detail"><%=komen.komentar%></p>
+                            </div>
+                        <%})%>
+                            
+                        
+                </div>
+            </div>
+
+            <!--Membuat Commentar-->
+            <div class="add-comment-container">
+                <div class="add-comment">
+                    <form action="/komentar" method="post">
+                        <h2 class="judul">Berikan komentar</h2>
+                        <input type="hidden" name="madingId" value="<%=item.id%>">
+                        <input type="text" name="nama_pengguna" placeholder="Masukan Nama Anda...">
+                        <input id="email" type="email" name="email" placeholder="Masukan Email Anda...">
+                        <div class="flex-comment">
+                            <textarea name="komentar" placeholder="Masukan Komentar Anda..."></textarea>
+                            <input type="submit" value="Kirim">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Content Sebelah Kanan-->
+        <div class="right-content">
+            <div class="image-container">
+                <img src="/uploads/<%=item.img%>">
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <%- include('footer'); %>
+</body>
+</html>

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e4e4e4;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: #444444;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .sidebar a.active {
+    background-color: #555;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  .content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 850px;
+  }
+  
+  .card {
+    margin-top: 15px;
+    display: flex;
+  }
+
+  .card-data {
+    width: 350px;
+    background-color: rgb(175, 175, 175);
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
+  .data {
+    display: flex;
+    align-items: end;
+    padding: 5px;
+  }
+
+  .data img {
+    width: 100px;
+  }
+
+  .total-data {
+    margin: 0 5px;
+    flex: 2;
+    text-align: right;
+  }
+
+  .total-data h2 {
+    font-size: 75px;
+  }
+
+  .total-data p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .button {
+    margin-top: 10px;
+    height: 30px;
+  }
+
+  .button .btn-save, .btn-print {
+    color: rgb(0, 0, 0);
+    text-decoration: unset;
+    padding: 20px 10px;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: bold;
+  }

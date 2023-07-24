@@ -1,0 +1,30 @@
+<header>
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="#">
+                <img src="/img/Logo.png" alt="logo" height="100px">
+            </a>
+        </div>
+        <div class="nav-link">
+            <a href="/" class="link-list"> Home</a>
+            <a href="#" class="link-list">About</a>
+            <a href="#" class="link-list">Help</a>    
+        </div>
+        <% if (locals.isLoggedIn) { %>
+        <div class="nav-logged-in">
+            <a href="/dashboard" class="btn-dashboard">
+                Dashboard
+            </a>
+            <a href="/logout" class="btn-logout">
+                Logout
+            </a>
+        </div>
+    <% } else { %>
+        <div class="nav-login">
+            <a href="/login" class="btn-login">
+                Login
+            </a>
+        </div>
+        <% } %>
+        
+</header>

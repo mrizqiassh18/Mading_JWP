@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadingQue</title>
+    <link rel="stylesheet" href="/css/landing-page.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!--NavBar-->
+        <%- include('header') %>
+
+        <header>
+            <div class="banner">
+                <h1>Mading Sekolah JeWePe</h1>
+                <p>Mading online makin seru!</p>
+            </div>
+        </header>
+        
+        <!--Main-->
+        <main>
+            <div class="card-mading">
+                <% mading.forEach(item => { %>
+                <div class="mading">
+                    <img class="featured-image" src="/uploads/<%=item.img%>" alt="">
+                    <h2><%=item.judul%></h2>
+                    <div class="readmore-flex">
+                        <a href="/details/<%= item.id %>">Read More</a>
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+        </main>
+    </div>
+
+    <!--Footer-->
+    <%- include('footer'); %>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/css/input.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--NavBar-->
+    <%- include('header'); %>
+    
+    <div class="sidebar">
+        <a  href="/dashboard">Dashboard</a>
+        <a class="active" href="/input">Input</a>
+        <a href="/list-mading-admin">Daftar Mading</a>
+    </div>
+    <div class="content">
+        <h1>Input Mading</h1>
+        <hr>
+        <div class="form-container">
+            <div class="form">
+                <form action="/input" method="post" enctype="multipart/form-data">
+                    <label for="judul">Judul</label><br>
+                    <input class="judul" type="text" placeholder="Masukan Judul" name="judulName"><br>
+                    <label for="caption">Caption</label><br>
+                    <textarea placeholder="Masukan Caption" name="caption"></textarea><br>
+                    <label for="gambar">Gambar</label><br>
+                    <input type="file" name="image" id="image" accept="image/*">
+                    <input class="button-submit" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <%- include('footer'); %>
+</body>
+</html>

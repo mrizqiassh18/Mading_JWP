@@ -1,0 +1,61 @@
+.nav-container {
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+}
+
+.nav-container .nav-link {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link .link-list {
+    text-decoration: unset;
+    color: black;
+    margin: 0px 16px;
+}
+
+.nav-logged-in .btn-logout, .btn-dashboard {
+  background-color: rgb(102, 102, 102);
+  color: white;
+  text-decoration: unset;
+  padding: 8px 46px;
+  border-radius: 16px;
+  font-size: 15px;
+}
+
+.nav-logged-in {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-logged-in .btn-dashboard {
+  background-color: rgb(102, 102, 102);
+  color: white;
+  text-decoration: unset;
+  padding: 8px 46px;
+  border-radius: 16px;
+  font-size: 15px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 30px;
+}
+
+footer {
+    background-color: rgb(102, 102, 102);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 10px;
+}

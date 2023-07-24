@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+        <!--NavBar-->
+    <%- include('header'); %>
+    
+        <div class="login"> 
+            <div class="login-container">
+                <form action="/login" method="post">
+                    <h2 class="login-header">Login</h2>
+                    <input type="email" placeholder="email" name="email">
+                    <input type="password" placeholder="Password" name="password">
+                    <input type="submit" value="Log In">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <%- include('footer'); %>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadingQue</title>
+    <link rel="stylesheet" href="/css/list-mading-admin.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!--NavBar-->
+    <%- include('header'); %>
+        
+        <!--Main-->
+        <main>
+            <div class="card-mading">
+                <% mading.forEach(item => { %>
+                    <div class="mading">
+                    <img class="featured-image" src="/uploads/<%=item.img%>" alt="">
+                    <h2><%=item.judul%></h2>
+                    <a href="/details-admin/<%= item.id %>">Read More</a>
+                    <form action="/delete-mading/<%=item.id%>" method="post">
+                        <input type="submit" value="Delete">
+                    </form>
+                </div>
+                <% }); %>
+                
+            </div>
+        </main>
+    </div>
+    
+    <!--Footer-->
+    <%- include('footer'); %>
+</body>
+</html>

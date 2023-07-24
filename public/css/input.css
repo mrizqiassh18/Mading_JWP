@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e4e4e4;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: #444444;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .sidebar a.active {
+    background-color: #555;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  .content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 850px;
+  }
+
+  .form-container {
+    display: flex;
+    flex: 1;
+    height: 75%;
+    align-items: center;
+    justify-content: center;
+  }
+
+.form input[type='text'] {
+  height: 50px;
+  width: 600px;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 18px;
+  outline: none;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+.form textarea{
+  width: 600px;
+  border-radius: 5px;
+  border-color: #ffffff;
+  font-size: 18px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+.form textarea:focus{
+  border: 1px solid white;
+  outline: none;
+}
+
+.form label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form input[type="file"] {
+  width: 600px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-color: #e4e4e4;
+  padding: 10px 0;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.button-submit {
+  height: 50px;
+  width: 600px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #e4e4e4;
+  padding: 10px;
+  outline: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.button-submit:hover {
+  background-color: #c7c7c7;
+}
+

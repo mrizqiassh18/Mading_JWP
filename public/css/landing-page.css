@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e4e4e4;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: #444444;
+}
+
+.banner {
+    text-align: center;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    padding: 50px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+.mading {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 400px;
+    text-align: center;
+    background-color: white;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.mading a{
+    display: block;
+    color: #444444;
+    border: 1px solid #444444;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.mading a:hover {
+    background-color: #444444;
+    color: white;
+}
+
+
+.card-mading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px;
+}
+
+.featured-image {
+    max-width: 300px;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mading h2 {
+    font-size: 18px;
+    margin: 5px;
+}
